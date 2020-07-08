@@ -75,7 +75,7 @@ if __name__ == '__main__':
         print('请好好输！\n')
         start = input("请输入你要从哪一页开始爬取（例：第1页：输入1）\n")
     end = input("请输入你要从哪一页结束爬取（例：第2页：输入2）\n")
-    while end.isdigit() == False or end == '':
+    while end.isdigit() == False or end == '' or end < start:
         print('请好好输！\n')
         end = input("请输入你要从哪一页结束爬取（例：第2页：输入2）\n")
     start = int(start)
